@@ -69,7 +69,7 @@ function PlaylistManager() {
    
   async function handleYoutubeVideos(){
     try {
-      const response= await axios.get("http://localhost:5000/api/youtube/playlists")
+      const response= await axios.get("https://palcode001.onrender.com/api/youtube/playlists")
       // console.log(response.data[0].snippet.localized);
       // console.log(response.data[0].snippet.thumbnails.default);
       setPlaylists(response.data)
