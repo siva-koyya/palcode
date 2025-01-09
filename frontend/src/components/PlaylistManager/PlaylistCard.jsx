@@ -7,8 +7,6 @@ import "./PlaylistManager.css";
 function PlaylistCard({ playlist }) {
   let [playlis, setPlaylis] = useState(playlist);
   let { id } = playlist;
-  console.log(playlist.snippet?.localized?.title, "--><><><");
-  console.log(playlist.snippet?.thumbnails?.default, "-->");
   
   const urlImg = playlist.snippet?.thumbnails?.medium?.url || "./img/pushp-2.jpg";
   const title = playlist.snippet?.localized?.title;
