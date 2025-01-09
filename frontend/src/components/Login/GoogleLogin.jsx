@@ -24,7 +24,7 @@ const GoogleAuth = ({ googleLogin }) => {
   };
 
   return (
-    <GoogleOAuthProvider clientId={process.env.REACT_APP_GOOGLE_CLIENT_ID}>
+    <GoogleOAuthProvider clientId={"669729393221-unh820m1mh1cgr44qn4i3bo4ndg0677l.apps.googleusercontent.com"}>
       <div style={{ textAlign: "center", marginTop: "50px" }}>
         <h2>Login with Google</h2>
         <GoogleLogin onSuccess={handleSuccess} onError={handleError} />
