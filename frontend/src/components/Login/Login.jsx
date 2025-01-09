@@ -13,7 +13,7 @@ const Login = () => {
 
   const sendOtp = async () => {
     try {
-      await axios.post("http://localhost:5000/api/login", { email });
+      await axios.post("https://palcode001.onrender.com/api/login", { email });
       alert("OTP sent to your email.");
     } catch (err) {
       console.error(err);
@@ -40,7 +40,7 @@ const Login = () => {
   };
 
   const googleLogin = () => {
-    window.location.href = "http://localhost:5000/api/auth/google";
+    window.location.href = "https://palcode001.onrender.com/api/auth/google";
   };
 
   // useEffect(() => {
