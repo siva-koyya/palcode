@@ -46,7 +46,7 @@ const transporter = nodemailer.createTransport({
   service: "gmail",
   auth: {
     user: "sivarock083@gmail.com",
-    pass: process.env.NodeMail,
+    pass:"rfzo weja oedz fpow",
   },
 });
 
@@ -54,8 +54,8 @@ const transporter = nodemailer.createTransport({
 passport.use(
   new GoogleStrategy(
     {
-      clientID: `${process.env.ClientID}`,
-      clientSecret: `${process.env.ClientSecret}`,
+      clientID: `669729393221-unh820m1mh1cgr44qn4i3bo4ndg0677l.apps.googleusercontent.com`,
+      clientSecret: `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`,
       callbackURL: "http://localhost:5000/api/auth/google/callback",
     },
     (accessToken, refreshToken, profile, done) => {
@@ -154,7 +154,7 @@ app.get("/api/youtube/playlists", async (req, res) => {
       part: "snippet",
       channelId: "UCjsTAF0d6VY5lX2W7MNINgA", // Replace with your channel ID
       maxResults: 10,
-      key: process.env.YoutubeKey, // Your YouTube API key
+      key: 'AIzaSyD7k3DGsdrqjpWqLKU6ee1elIUTjkzBHLg', // Your YouTube API key
     });
     res.json(response.data.items);
     console.log(response);
