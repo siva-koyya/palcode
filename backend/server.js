@@ -15,7 +15,7 @@ app.use(bodyParser.json());
 app.use(cors());
 
 const corsOptions = {
-  origin: "http://localhost:3000", // Allow only this origin
+  origin: "https://palcodesite.onrender.com/", // Allow only this origin
   credentials: true, // Allow cookies/credentials
 };
 app.use(cors(corsOptions));
@@ -56,7 +56,7 @@ passport.use(
     {
       clientID: `669729393221-unh820m1mh1cgr44qn4i3bo4ndg0677l.apps.googleusercontent.com`,
       clientSecret: `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`,
-      callbackURL: "http://localhost:5000/api/auth/google/callback",
+      callbackURL: "https://palcodesite.onrender.com//api/auth/google/callback",
     },
     (accessToken, refreshToken, profile, done) => {
       return done(null, profile,accessToken);
@@ -87,7 +87,7 @@ app.get(
   "/api/auth/google/callback",
   passport.authenticate("google", { failureRedirect: "/" }),
   (req, res) => {
-    res.redirect("http://localhost:3000");
+    res.redirect("https://palcodesite.onrender.com");
   }
 );
 
@@ -154,7 +154,7 @@ app.get("/api/youtube/playlists", async (req, res) => {
       part: "snippet",
       channelId: "UCjsTAF0d6VY5lX2W7MNINgA", // Replace with your channel ID
       maxResults: 10,
-      key: 'AIzaSyD7k3DGsdrqjpWqLKU6ee1elIUTjkzBHLg', // Your YouTube API key
+      key:"AIzaSyD7k3DGsdrqjpWqLKU6ee1elIUTjkzBHLg", // Your YouTube API key
     });
     res.json(response.data.items);
     console.log(response);
@@ -172,7 +172,7 @@ app.get("/api/youtube/playlist/:id", async (req, res) => {
       part: "snippet",
       playlistId: id,
       maxResults: 10,
-      key: process.env.YOUTUBE_API_KEY, // Your YouTube API key
+      key: "AIzaSyD7k3DGsdrqjpWqLKU6ee1elIUTjkzBHLg", // Your YouTube API key
     });
     res.json(response.data.items);
   } catch (err) {
