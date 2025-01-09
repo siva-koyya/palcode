@@ -1,0 +1,261 @@
+/* Header container */
+.header {
+  width: 100%;
+  max-width: 1122px;
+  height: 67px;
+  border-radius: 13.97px;
+  margin-top: 16px;
+  margin-left: auto;
+  margin-right: auto;
+  background: #27272F;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+  opacity: 1; /* Set to 1 if you want to show the header */
+  transition: opacity 0.3s ease; /* Optional, for opacity animation */
+}
+
+/* First section: left side (e.g., header title) */
+.header .c-1 {
+  width: 40%;
+  height: 100%;
+  display: flex;
+  align-items: center;
+}
+
+/* Header Title */
+.header-title {
+  font-family: Rubik, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 18.96px;
+  color: #FFFFFF;
+  /* background: #FFFFFF; */
+  padding: 0 10px;
+  border-radius: 5px;
+}
+
+/* Actions section: buttons, search, etc. */
+.header .actions {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  width: auto; /* Set width to auto for flexible resizing */
+  height: 67px;
+  opacity: 1; /* Set to 1 if you want to show the actions section */
+}
+
+/* Button Styles */
+.btnImg{
+  width: 20px;
+  height: 20px;
+  /* border: 1px solid #484851; */
+  /* border-radius: 50%; */
+  opacity: 1;
+  background-size: cover;
+}
+.header .btn {
+  width: 140px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+  padding: 6px 12px;
+  font-size: 0.8rem;
+  border-radius: 10px;
+  border: 1px solid #017EFA;
+  color: #017EFA;
+  background: #27272F;
+  backdrop-filter: blur(8px); /* Optional blur effect */
+  opacity: 1; /* Set to 1 to show button */
+  cursor: pointer;
+  transition: background 0.3s ease, color 0.3s ease; /* Optional, for hover effect */
+}
+
+.header .btn:hover {
+  background: #017EFA;
+  color: #FFFFFF;
+}
+
+/* Search container */
+.h-srContainer {
+  width: auto;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  padding: 0 10px;
+  border-radius: 5px;
+  border: 1px solid #484851;
+}
+
+
+.header-searchInp {
+  width: 130px;
+  height: 100%;
+  background: none;
+  color: #FFFFFF;
+  border: none;
+  outline: none;
+  padding: 0 10px;
+  font-size: 1rem;
+  border-radius: 5px;
+}
+
+
+.h-img {
+  width: 28px;
+  height: 27px;
+  border: 1px solid #484851;
+  border-radius: 50%;
+  opacity: 1;
+  background-size: cover;
+}
+
+
+.header .user-info {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header .user-avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  margin-right: 8px;
+  object-fit: cover;
+}
+.userText{
+  color: #FFFFFF;
+  width: auto;
+  font-size: small;
+}
+
+
+
+/* Small screens (mobile, max-width: 768px) */
+@media (max-width: 768px) {
+  .header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .header .c-1 {
+    width: 100%;
+    justify-content: space-between;
+  }
+
+  .header-title {
+    font-size: 14px;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+  }
+
+  .header .actions {
+    flex-direction: column;
+    width: 100%;
+    gap: 10px;
+  }
+
+  .header .btn {
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+
+  .h-srContainer {
+    width: 100%;
+    padding: 0 10px;
+  }
+
+  .header-searchInp {
+    width: 100%;
+  }
+
+  .h-img {
+    width: 24px;
+    height: 24px;
+  }
+
+  .header .user-avatar {
+    width: 35px;
+    height: 35px;
+  }
+}
+
+/* Medium screens (tablet, min-width: 769px, max-width: 1024px) */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .header .actions {
+    flex-direction: row;
+    gap: 20px;
+  }
+
+  .header .btn {
+    width: auto;
+    padding: 6px 12px;
+  }
+
+  .header-title {
+    font-size: 15px;
+  }
+
+  .h-srContainer {
+    width: 180px;
+  }
+
+  .header-searchInp {
+    width: 140px;
+  }
+
+  .h-img {
+    width: 26px;
+    height: 26px;
+  }
+
+  .header .user-avatar {
+    width: 38px;
+    height: 38px;
+  }
+}
+
+/* Large screens (desktop, min-width: 1025px) */
+@media (min-width: 1025px) {
+  .header {
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .header-title {
+    font-size: 16px;
+  }
+
+  .header .btn {
+    padding: 6px 12px;
+  }
+
+  .h-srContainer {
+    width: 200px;
+  }
+
+  .header-searchInp {
+    width: 150px;
+  }
+
+  .h-img {
+    width: 28px;
+    height: 28px;
+  }
+
+  .header .user-avatar {
+    width: 40px;
+    height: 40px;
+  }
+}

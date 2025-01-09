@@ -1,0 +1,42 @@
+/* .playlist-manager {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    background: #121212;
+    height: 100%;
+    overflow-y: auto;
+  }
+  
+  .playlists {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .playlist-card {
+    background: #282828;
+    width: 200px;
+    height: 120px;
+    border-radius: 10px;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+    transition: transform 0.2s ease;
+  }
+  
+  .playlist-card:hover {
+    transform: scale(1.05);
+  }
+  
+  .playlist-card p {
+    margin: 0;
+    color: #fff;
+  }
+  
+  .playlist-card span {
+    color: #999;
+    font-size: 14px;
+  }
+   */

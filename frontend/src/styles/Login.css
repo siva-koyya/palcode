@@ -1,0 +1,34 @@
+.login {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #1f1f1f;
+  }
+  
+  .login h2 {
+    margin-bottom: 20px;
+    color: #fff;
+    
+  }
+  
+  .login input {
+    width: 300px;
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  .login button {
+    width: 150px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: white;
+    cursor: pointer;
+    margin-top: 10px;
+  }
+  
