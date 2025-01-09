@@ -24,7 +24,7 @@ const Login = () => {
   const verifyOtp = async () => {
     try {
       const response = await axios.post(
-        "http://localhost:5000/api/verify-otp",
+        "https://palcode001.onrender.com/api/verify-otp",
         { email, otp }
       );
       if (response.data.success) {
